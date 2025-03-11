@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="main_purple">#2A1246</color>
     <color name="default_text_color">#B2000000</color>
+    <color name="inactive_indicator_color">#FFE4E7EC</color>
+    <color name="active_indicator_color">#FF2A1246</color>
 </resources>
