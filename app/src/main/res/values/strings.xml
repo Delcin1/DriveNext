@@ -8,4 +8,13 @@
     <string name="no_internet_image">No internet connection image</string>
     <string name="no_internet_title">No Internet Connection</string>
     <string name="no_internet_message">Please check your internet connection and try again.</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="lets_go">Let\'s Go</string>
+    <string name="onboarding_title_1">Title 1</string>
+    <string name="onboarding_title_2">Title 2</string>
+    <string name="onboarding_title_3">Title 3</string>
+    <string name="onboarding_description_1">Description 1</string>
+    <string name="onboarding_description_2">Description 2</string>
+    <string name="onboarding_description_3">Description 3</string>
 </resources>
