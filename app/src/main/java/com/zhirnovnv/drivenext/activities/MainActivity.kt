@@ -10,7 +10,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.zhirnovnv.drivenext.R
 import com.zhirnovnv.drivenext.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
 
     private lateinit var binding: ActivityMainBinding
 

@@ -6,8 +6,9 @@ import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import com.zhirnovnv.drivenext.databinding.SplashScreenLayoutBinding
+import com.zhirnovnv.drivenext.utils.NetworkUtils
 
-class SplashActivity : AppCompatActivity() {
+class SplashActivity : BaseActivity() {
 
     private lateinit var binding: SplashScreenLayoutBinding
 
