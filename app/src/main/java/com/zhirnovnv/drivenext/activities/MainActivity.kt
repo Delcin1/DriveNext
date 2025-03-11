@@ -1,4 +1,4 @@
-package com.zhirnovnv.drivenext
+package com.zhirnovnv.drivenext.activities
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -7,6 +7,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.zhirnovnv.drivenext.R
 import com.zhirnovnv.drivenext.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
