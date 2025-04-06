@@ -11,7 +11,6 @@ open class BaseActivity : AppCompatActivity() {
         if (!NetworkUtils.isInternetAvailable(this)) {
             val intent = Intent(this, NoInternetActivity::class.java)
             startActivity(intent)
-            finish()
         }
     }
 }

@@ -1,32 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp"
     android:background="@color/white">
 
     <ImageView
+        android:id="@+id/noInternetImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_no_internet"
-        android:contentDescription="@string/no_internet_image" />
+        android:contentDescription="@string/no_internet_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="250dp"
+        app:layout_constraintBottom_toTopOf="@+id/noInternetTitle"
+        android:layout_marginBottom="16dp" />
 
     <TextView
+        android:id="@+id/noInternetTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/no_internet_title"
         android:textSize="24sp"
         android:textColor="@color/black"
-        android:layout_marginTop="16dp" />
+        app:layout_constraintTop_toBottomOf="@id/noInternetImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"/>
 
     <TextView
+        android:id="@+id/noInternetMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/no_internet_message"
         android:textSize="16sp"
         android:textColor="@color/default_text_color"
+        app:layout_constraintTop_toBottomOf="@id/noInternetTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp"
-        android:gravity="center" />
-</LinearLayout>
+        android:textAlignment="center"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/retryButton"
+        android:layout_width="342dp"
+        android:layout_height="65dp"
+        android:text="@string/retry_internet_check"
+        android:theme="@style/FormButton"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:textSize="14sp"
+        android:backgroundTint="@color/main_purple"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="65dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
