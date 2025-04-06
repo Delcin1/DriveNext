@@ -6,8 +6,8 @@
     <string name="drivenext">DriveNext</string>
     <string name="splash_subtitle">Поможем найти твою следующую поездку</string>
     <string name="no_internet_image">No internet connection image</string>
-    <string name="no_internet_title">No Internet Connection</string>
-    <string name="no_internet_message">Please check your internet connection and try again.</string>
+    <string name="no_internet_title">Нет подключения \nк интернету</string>
+    <string name="no_internet_message">Проверьте подключение и повторите \nпопытку</string>
     <string name="skip">Пропустить</string>
     <string name="next">Далее</string>
     <string name="lets_go">Поехали</string>
@@ -17,4 +17,5 @@
     <string name="onboarding_description_1">Открой для себя удобный и доступный способ передвижения </string>
     <string name="onboarding_description_2">Арендуй автомобиль и наслаждайся его удобством</string>
     <string name="onboarding_description_3">Выбирай понравившееся среди сотен доступных автомобилей</string>
+    <string name="retry_internet_check">Повторить попытку</string>
 </resources>
