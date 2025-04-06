@@ -3,31 +3,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp">
+    android:gravity="center">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
         android:src="@drawable/onboarding_image_1" />
 
     <TextView
         android:id="@+id/titleTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="50dp"
         android:layout_height="wrap_content"
         android:text="@string/onboarding_title_1"
         android:textSize="24sp"
         android:textColor="@color/black"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:textAlignment="textStart" />
 
     <TextView
         android:id="@+id/descriptionTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="50dp"
+        android:textAlignment="textStart"
         android:layout_height="wrap_content"
         android:text="@string/onboarding_description_1"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:textColor="@color/default_text_color"
-        android:layout_marginTop="8dp"
-        android:gravity="center" />
+        android:layout_marginTop="8dp"/>
 </LinearLayout>

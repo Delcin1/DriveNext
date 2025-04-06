@@ -2,12 +2,15 @@ package com.zhirnovnv.drivenext.activities
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.TypedValue
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.zhirnovnv.drivenext.R
+
+const val defaultIndicatorSize = 8
 
 class OnboardingActivity : BaseActivity() {
 
@@ -27,6 +30,8 @@ class OnboardingActivity : BaseActivity() {
 
         val onboardingAdapter = OnboardingAdapter(this)
         viewPager.adapter = onboardingAdapter
+
+        updateIndicators(0)
 
         viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
@@ -53,7 +58,21 @@ class OnboardingActivity : BaseActivity() {
     }
 
     private fun updateIndicators(position: Int) {
+        val activeWidth = TypedValue.applyDimension(
+            TypedValue.COMPLEX_UNIT_DIP,
+            40f,
+            resources.displayMetrics
+        ).toInt()
+        val inactiveWidth = TypedValue.applyDimension(
+            TypedValue.COMPLEX_UNIT_DIP,
+            16f,
+            resources.displayMetrics
+        ).toInt()
+
         for (i in indicators.indices) {
+            val layoutParams = indicators[i].layoutParams
+            layoutParams.width = if (i == position) activeWidth else inactiveWidth
+            indicators[i].layoutParams = layoutParams
             indicators[i].setBackgroundResource(if (i == position) R.drawable.indicator_active else R.drawable.indicator_inactive)
         }
     }
