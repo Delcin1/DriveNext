@@ -8,13 +8,13 @@
     <string name="no_internet_image">No internet connection image</string>
     <string name="no_internet_title">No Internet Connection</string>
     <string name="no_internet_message">Please check your internet connection and try again.</string>
-    <string name="skip">Skip</string>
-    <string name="next">Next</string>
-    <string name="lets_go">Let\'s Go</string>
-    <string name="onboarding_title_1">Title 1</string>
-    <string name="onboarding_title_2">Title 2</string>
-    <string name="onboarding_title_3">Title 3</string>
-    <string name="onboarding_description_1">Description 1</string>
-    <string name="onboarding_description_2">Description 2</string>
-    <string name="onboarding_description_3">Description 3</string>
+    <string name="skip">Пропустить</string>
+    <string name="next">Далее</string>
+    <string name="lets_go">Поехали</string>
+    <string name="onboarding_title_1">Аренда автомобилей</string>
+    <string name="onboarding_title_2">Безопасно и удобно</string>
+    <string name="onboarding_title_3">Лучшие предложения</string>
+    <string name="onboarding_description_1">Открой для себя удобный и доступный способ передвижения </string>
+    <string name="onboarding_description_2">Арендуй автомобиль и наслаждайся его удобством</string>
+    <string name="onboarding_description_3">Выбирай понравившееся среди сотен доступных автомобилей</string>
 </resources>

@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.view.setPadding
 import androidx.recyclerview.widget.RecyclerView
 import com.zhirnovnv.drivenext.R
 
@@ -35,6 +36,12 @@ class OnboardingAdapter(private val context: Context) : RecyclerView.Adapter<Onb
     }
 
     override fun onBindViewHolder(holder: OnboardingViewHolder, position: Int) {
+        if (position == 1) {
+            holder.itemView.setPadding(16)
+        } else {
+            holder.itemView.setPadding(0)
+        }
+
         holder.bind(images[position], titles[position], descriptions[position])
     }
 
