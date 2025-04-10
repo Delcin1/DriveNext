@@ -119,7 +119,7 @@ class Signup3Activity : AppCompatActivity() {
                 .build()
             datePicker.show(supportFragmentManager, "datePicker")
             datePicker.addOnPositiveButtonClickListener {
-                val simpleDateFormat = SimpleDateFormat("dd/mm/yyyy", Locale.getDefault())
+                val simpleDateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
                 binding.su3DateText.text = simpleDateFormat.format(Date(it).time)
             }
         }
