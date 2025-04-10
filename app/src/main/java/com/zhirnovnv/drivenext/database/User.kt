@@ -17,5 +17,6 @@ data class User(
     val licenseUri: String = "",
     val licenseRegDate: String = "",
     val passUri: String = "",
+    val avatarUri: String = "",
     val token: String? = null
 )

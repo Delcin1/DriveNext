@@ -141,9 +141,11 @@ class Signup3Activity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
+            val email = intent.getStringExtra("email") ?: ""
+
             CoroutineScope(Dispatchers.IO).launch {
                 val token = repository.register(
-                    intent.getStringExtra("email") ?: "",
+                    email,
                     intent.getStringExtra("password") ?: "",
                     intent.getStringExtra("lastname") ?: "",
                     intent.getStringExtra("name") ?: "",
@@ -153,10 +155,12 @@ class Signup3Activity : AppCompatActivity() {
                     license,
                     licenseUri.toString(),
                     licenseDate,
-                    passportUri.toString())
+                    passportUri.toString(),
+                    avatarUri.toString())
                 withContext(Dispatchers.Main) {
                     if (token != null) {
                         // Сохранение токена для автологина
+                        prefs.edit() { putString("email", email) }
                         prefs.edit() { putString("user_token", token) }
                         startActivity(Intent(this@Signup3Activity, CongratulationActivity::class.java))
                         finish()

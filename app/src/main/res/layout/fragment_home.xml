@@ -4,19 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/upperView"
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        android:background="#F9F5FF"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:hint="@string/desc_autoFind"
+        android:textColor="@color/black"
+        android:textColorHint="@color/anotherGray"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="@+id/upperView"
+        app:layout_constraintStart_toStartOf="@+id/upperView"
+        app:layout_constraintTop_toTopOf="@+id/upperView"
+        app:startIconDrawable="@drawable/ic_search">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textColorHint="@color/anotherGray"
+            android:textFontWeight="500"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="22dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/desc_findAuto"
+        android:textColor="@color/stylishPurple"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/upperView"
+        app:layout_constraintStart_toStartOf="@+id/upperView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCar"
+        android:layout_width="390dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/upperView" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,8 +7,6 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.zhirnovnv.drivenext.R
-import com.zhirnovnv.drivenext.databinding.ActivityLoginBinding
-import com.zhirnovnv.drivenext.databinding.ActivityMainBinding
 import com.zhirnovnv.drivenext.databinding.NoInternetLayoutBinding
 
 class NoInternetActivity : AppCompatActivity() {

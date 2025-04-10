@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:paddingTop="16dp"
+        android:text="@string/desc_settings"
+        android:textColor="@color/allBlack"
+        android:textFontWeight="700"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton2"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@android:color/transparent"
+        app:strokeWidth="0dp"
+        android:elevation="0dp"
+        android:stateListAnimator="@null"
+        android:drawableEnd="@drawable/ic_arrowright"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_manavatar"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="223dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialButton2"
+        app:layout_constraintStart_toStartOf="@id/materialButton2"
+        app:layout_constraintTop_toTopOf="@+id/materialButton2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Иван Иванов"
+        android:textColor="@color/darkPurple"
+        android:textFontWeight="700"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="ivan@mtuci.ru"
+        android:textColor="@color/anotherGray"
+        android:textFontWeight="400"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/transparent"
+        app:strokeWidth="0dp"
+        android:elevation="0dp"
+        android:stateListAnimator="@null"
+        android:drawableEnd="@drawable/ic_arrowright"
+        android:fontFamily="@font/montserrat"
+        android:gravity="start|center_vertical"
+        android:paddingStart="48dp"
+        android:text="@string/desc_myRent"
+        android:textColor="@color/darkPurple"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton2"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:src="@drawable/ic_settingsubertaxi"
+        app:layout_constraintBottom_toBottomOf="@+id/materialButton"
+        app:layout_constraintStart_toStartOf="@+id/materialButton"
+        app:layout_constraintTop_toTopOf="@+id/materialButton"
+        tools:ignore="RtlSymmetry" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/transparent"
+        app:strokeWidth="0dp"
+        android:elevation="0dp"
+        android:stateListAnimator="@null"
+        android:drawableEnd="@drawable/ic_arrowright"
+        android:fontFamily="@font/montserrat"
+        android:gravity="start|center_vertical"
+        android:paddingStart="48dp"
+        android:text="@string/desc_theme"
+        android:textColor="@color/darkPurple"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:src="@drawable/ic_settingstheme"
+        app:layout_constraintBottom_toBottomOf="@+id/materialButton3"
+        app:layout_constraintStart_toStartOf="@+id/materialButton3"
+        app:layout_constraintTop_toTopOf="@+id/materialButton3"
+        tools:ignore="RtlSymmetry" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/transparent"
+        app:strokeWidth="0dp"
+        android:elevation="0dp"
+        android:stateListAnimator="@null"
+        android:drawableEnd="@drawable/ic_arrowright"
+        android:fontFamily="@font/montserrat"
+        android:gravity="start|center_vertical"
+        android:paddingStart="48dp"
+        android:text="@string/desc_notifications"
+        android:textColor="@color/darkPurple"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton3"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:src="@drawable/ic_settingsbell"
+        app:layout_constraintBottom_toBottomOf="@+id/materialButton4"
+        app:layout_constraintStart_toStartOf="@+id/materialButton4"
+        app:layout_constraintTop_toTopOf="@+id/materialButton4"
+        tools:ignore="RtlSymmetry" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/transparent"
+        app:strokeWidth="0dp"
+        android:elevation="0dp"
+        android:stateListAnimator="@null"
+        android:drawableEnd="@drawable/ic_arrowright"
+        android:fontFamily="@font/montserrat"
+        android:gravity="start|center_vertical"
+        android:paddingStart="48dp"
+        android:text="@string/desc_joinCar"
+        android:textColor="@color/darkPurple"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton4"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:src="@drawable/ic_settingsbanknotes"
+        app:layout_constraintBottom_toBottomOf="@+id/materialButton5"
+        app:layout_constraintStart_toStartOf="@+id/materialButton5"
+        app:layout_constraintTop_toTopOf="@+id/materialButton5"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/materialButton5" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton6"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/transparent"
+        app:strokeWidth="0dp"
+        android:elevation="0dp"
+        android:stateListAnimator="@null"
+        android:drawableEnd="@drawable/ic_arrowright"
+        android:fontFamily="@font/montserrat"
+        android:gravity="start|center_vertical"
+        android:paddingStart="48dp"
+        android:text="@string/desc_helpp"
+        android:textColor="@color/darkPurple"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:src="@drawable/ic_settingsquestions"
+        app:layout_constraintBottom_toBottomOf="@+id/materialButton6"
+        app:layout_constraintStart_toStartOf="@+id/materialButton6"
+        app:layout_constraintTop_toTopOf="@+id/materialButton6"
+        tools:ignore="RtlSymmetry" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton7"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/transparent"
+        app:strokeWidth="0dp"
+        android:elevation="0dp"
+        android:stateListAnimator="@null"
+        android:drawableEnd="@drawable/ic_arrowright"
+        android:fontFamily="@font/montserrat"
+        android:gravity="start|center_vertical"
+        android:paddingStart="48dp"
+        android:text="@string/desc_inviteFriend"
+        android:textColor="@color/darkPurple"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton6"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:src="@drawable/ic_settingsmail"
+        app:layout_constraintBottom_toBottomOf="@+id/materialButton7"
+        app:layout_constraintStart_toStartOf="@+id/materialButton7"
+        app:layout_constraintTop_toTopOf="@+id/materialButton7"
+        tools:ignore="RtlSymmetry" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

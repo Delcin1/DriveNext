@@ -55,6 +55,7 @@ class LoginActivity : BaseActivity() {
                     if (token != null) {
                         // Сохранение токена для автологина
                         prefs.edit() { putString("user_token", token) }
+                        prefs.edit() { putString("email", email) }
                         startActivity(Intent(this@LoginActivity, MainActivity::class.java))
                         finish()
                     } else {

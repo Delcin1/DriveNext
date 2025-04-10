@@ -25,6 +25,8 @@
     <string name="onboarding_description_1">Открой для себя удобный и доступный способ передвижения </string>
     <string name="onboarding_description_2">Арендуй автомобиль и наслаждайся его удобством</string>
     <string name="onboarding_description_3">Выбирай понравившееся среди сотен доступных автомобилей</string>
+
+    <!-- SignUp strings. -->
     <string name="create_account">Создать аккаунт</string>
     <string name="email">Электронная почта</string>
     <string name="create_password">Придумайте пароль</string>
@@ -63,8 +65,103 @@
     <string name="success_sign_up">Вы успешно зарегистрировались. \nОбработка ваших персональных данных займет около двух часов. Спасибо за ожидание.</string>
     <string name="photo_picked">Фото выбрано</string>
     <string name="date_pick">Выберите дату</string>
-    <string name="error_saving_data">че не хватило данных тебе, да? ну я не знаю иди поищи их тогда</string>
 
-    <!-- SignUp strings. -->
-
+    <!-- Lab2 strings. -->
+    <string name="name_drivenext" translatable="false">DriveNext</string>
+    <string name="desc_gettingstarted">Поможем найти твою следующую поездку</string>
+    <string name="button_signin">Войти</string>
+    <string name="button_register">Зарегистрироваться</string>
+    <string name="desc_nointernet">Нет подключения к интернету</string>
+    <string name="desc_checkinternet">Проверьте подключение и повторите попытку</string>
+    <string name="button_tryagain">Повторить попытку</string>
+    <string name="button_skip">Пропустить</string>
+    <string name="desc_carrental">Аренда автомобилей</string>
+    <string name="desc_onboarding1">Открой для себя удобный и доступный способ передвижения</string>
+    <string name="button_next">Далее</string>
+    <string name="button_nextt">Поехали</string>
+    <string name="desc_safeandcomf">Безопасно и удобно</string>
+    <string name="desc_onboarding2">Арендуй автомобиль и наслаждайся его удобством</string>
+    <string name="desc_thebestoffers">Лучшие предложения</string>
+    <string name="desc_onboarding3">Выбирай понравившееся среди сотен доступных автомобилей</string>
+    <string name="desc_signin">Войдите в аккаунт</string>
+    <string name="desc_writedata">Пожалуйста, введите свои данные</string>
+    <string name="desc_email">Электронная почта</string>
+    <string name="desc_password">Пароль</string>
+    <string name="hint_writeemail">Введите электронную почту</string>
+    <string name="hint_writepassword">Введите пароль</string>
+    <string name="button_forgotpassword">Забыли пароль?</string>
+    <string name="button_signingoogle">Войти через Google</string>
+    <string name="desc_createaccount">Создать аккаунт</string>
+    <string name="desc_repeatpassword">Повторите пароль</string>
+    <string name="desc_Iagree">Я согласен с условиями обслуживания и политикой конфиденциальности</string>
+    <string name="desc_lastname">Фамилия</string>
+    <string name="hint_writelastname">Введите фамилию</string>
+    <string name="desc_name">Имя</string>
+    <string name="hint_writename">Введите имя</string>
+    <string name="desc_surname">Отчество</string>
+    <string name="hint_writesurname">Введите отчество</string>
+    <string name="desc_birthday">Дата рождения</string>
+    <string name="hint_ddmmyyyy">DD/MM/YYYY</string>
+    <string name="desc_gender">Пол</string>
+    <string name="desc_mangender">Мужской</string>
+    <string name="desc_womangender">Женский</string>
+    <string name="desc_addingicon">Добавление фотографии поможет владельцам и арендаторам узнать друг друга, когда они будут забирать машину</string>
+    <string name="desc_numberdrivelicense">Номер водительского удостоверения</string>
+    <string name="hint_numberdrivelicense" translatable="false">00000000000000000</string>
+    <string name="desc_dateofget">Дата выдачи</string>
+    <string name="desc_uploaddriverlicense">Загрузите фото водительского удостоверения</string>
+    <string name="desc_uploadphoto">Загрузь фото</string>
+    <string name="desc_uploadpassport">Загрузите фото паспорта</string>
+    <string name="desc_usewithfine">Пользуйтесь с удовольствием</string>
+    <string name="desc_congratulations">Поздравляем</string>
+    <string name="desc_successreg">Вы успешно зарегистрировались. Обработка ваших персональных данных займет около двух часов. Спасибо за ожидание.</string>
+    <string name="fill_fields">Не все поля заполнены</string>
+    <string name="password_missmatch">Пароли должны совпадать</string>
+    <string name="wrong_email">Почта указана неверно</string>
+    <string name="terms_dissagree">Вы не согласились с условием пользовательского соглашения</string>
+    <string name="ommited">*Можно не заполнять</string>
+    <string name="data_pick">Выберите дату</string>
+    <string name="lastname_alpha">Фамилия должна состоять только из букв</string>
+    <string name="name_alpha">Имя должно состоять только из букв</string>
+    <string name="surname_alpha">Отчество должно состоять только из букв</string>
+    <string name="photo_unpicked">Фото не выбрано!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="car_fuel" translatable="false">Бензин</string>
+    <string name="car_at" translatable="false">A/T</string>
+    <string name="car_dct" translatable="false">DC/T</string>
+    <string name="car_sst" translatable="false">SS/T</string>
+    <string name="car_2500" translatable="false">2500Р в день</string>
+    <string name="car_2000" translatable="false">2000Р в день</string>
+    <string name="car_3500" translatable="false">3500Р в день</string>
+    <string name="car_3000" translatable="false">3000Р в день</string>
+    <string name="car_sedan" translatable="false">S 500 Sedan</string>
+    <string name="car_quattro" translatable="false">TT Quattro</string>
+    <string name="car_huracan" translatable="false">Huracan</string>
+    <string name="car_roadster" translatable="false">Roadster</string>
+    <string name="car_mercedes" translatable="false">Mercedes-Benz</string>
+    <string name="car_audi" translatable="false">Audi</string>
+    <string name="car_lamborghini" translatable="false">Lamborghini</string>
+    <string name="car_tesla" translatable="false">Tesla</string>
+    <string name="login_usernotfound" translatable="false">Пользователь не найден</string>
+    <string name="loader_rent" translatable="false">Забронировать</string>
+    <string name="loader_details" translatable="false">Детали</string>
+    <string name="profile" translatable="false">Профиль</string>
+    <string name="profile_join" translatable="false">Присоединился в июле 2024</string>
+    <string name="desc_google" translatable="false">Google</string>
+    <string name="desc_logout" translatable="false">Выйти из профиля</string>
+    <string name="desc_None" translatable="false">None</string>
+    <string name="desc_changePassword" translatable="false">Поменять пароль</string>
+    <string name="desc_nothing" translatable="false">Ищем подходящие автомобили</string>
+    <string name="desc_sverch" translatable="false">*Треск сверчков*</string>
+    <string name="desc_autoFind" translatable="false">Введите марку автомобиля</string>
+    <string name="desc_findAuto" translatable="false">Давайте найдём автомобиль</string>
+    <string name="desc_settings" translatable="false">Настройки</string>
+    <string name="desc_myRent" translatable="false">Мои бронирования</string>
+    <string name="desc_theme" translatable="false">Тема</string>
+    <string name="desc_notifications" translatable="false">Уведомления</string>
+    <string name="desc_joinCar" translatable="false">Подключить свой автомобиль</string>
+    <string name="desc_helpp" translatable="false">Помощь</string>
+    <string name="desc_inviteFriend" translatable="false">Пригласи друга</string>
+    <string name="car_fuelElectro" translatable="false">Электро</string>
 </resources>
