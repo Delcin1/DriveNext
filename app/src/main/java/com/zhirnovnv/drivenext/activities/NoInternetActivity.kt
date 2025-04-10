@@ -7,14 +7,20 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.zhirnovnv.drivenext.R
+import com.zhirnovnv.drivenext.databinding.ActivityLoginBinding
+import com.zhirnovnv.drivenext.databinding.ActivityMainBinding
+import com.zhirnovnv.drivenext.databinding.NoInternetLayoutBinding
 
 class NoInternetActivity : AppCompatActivity() {
 
+    private lateinit var binding: NoInternetLayoutBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.no_internet_layout)
+        binding = NoInternetLayoutBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        val retryButton: Button = findViewById(R.id.retryButton)
+        val retryButton: Button = findViewById(binding.retryButton.id)
         retryButton.setOnClickListener {
             if (isInternetAvailable(this)) {
                 finish()

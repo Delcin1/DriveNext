@@ -6,7 +6,6 @@ import android.util.TypedValue
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.zhirnovnv.drivenext.R
 
@@ -48,12 +47,12 @@ class OnboardingActivity : BaseActivity() {
             if (viewPager.currentItem < onboardingAdapter.itemCount - 1) {
                 viewPager.currentItem += 1
             } else {
-                navigateToMainActivity()
+                navigateToGetStartedActivity()
             }
         }
 
         skipTextView.setOnClickListener {
-            navigateToMainActivity()
+            navigateToGetStartedActivity()
         }
     }
 
@@ -77,8 +76,8 @@ class OnboardingActivity : BaseActivity() {
         }
     }
 
-    private fun navigateToMainActivity() {
-        val intent = Intent(this, MainActivity::class.java)
+    private fun navigateToGetStartedActivity() {
+        val intent = Intent(this, GettingStartedActivity::class.java)
         startActivity(intent)
         finish()
     }

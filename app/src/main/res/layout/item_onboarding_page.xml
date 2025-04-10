@@ -17,6 +17,7 @@
         android:id="@+id/titleTextView"
         android:layout_width="match_parent"
         android:layout_marginHorizontal="50dp"
+        android:fontFamily="@font/montserrat"
         android:layout_height="wrap_content"
         android:text="@string/onboarding_title_1"
         android:textSize="24sp"
@@ -27,6 +28,7 @@
     <TextView
         android:id="@+id/descriptionTextView"
         android:layout_width="match_parent"
+        android:fontFamily="@font/montserrat"
         android:layout_marginHorizontal="50dp"
         android:textAlignment="textStart"
         android:layout_height="wrap_content"

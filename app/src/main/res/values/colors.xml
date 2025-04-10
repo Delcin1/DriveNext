@@ -11,4 +11,8 @@
     <color name="default_text_color">#B2000000</color>
     <color name="inactive_indicator_color">#FFE4E7EC</color>
     <color name="active_indicator_color">#FF2A1246</color>
+    <color name="light_gray">#FF667085</color>
+    <color name="gray">#FF404040</color>
+    <color name="light_black">#FF1A1A1A</color>
+    <color name="ultra_light_gray">#FFD0D5DD</color>
 </resources>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/su3TitleView"
+        android:layout_width="342dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/su3MainView"
+        app:layout_constraintStart_toStartOf="@+id/su3MainView"
+        app:layout_constraintTop_toTopOf="@+id/su3MainView" />
+
+    <ImageButton
+        android:id="@+id/su3BackBtn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@color/white"
+        android:contentDescription="Arrow before"
+        android:src="@drawable/ic_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/su3TitleView"
+        app:layout_constraintStart_toStartOf="@+id/su3TitleView"
+        app:layout_constraintTop_toTopOf="@+id/su3TitleView"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/su3TitleText"
+        android:layout_width="176dp"
+        android:layout_height="26dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_horizontal"
+        android:text="@string/create_account"
+        android:textColor="@color/light_black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/su3TitleView"
+        app:layout_constraintStart_toStartOf="@+id/su3TitleView"
+        app:layout_constraintTop_toTopOf="@+id/su3TitleView" />
+
+
+    <View
+        android:id="@+id/su3MainView"
+        android:layout_width="342dp"
+        android:layout_height="600dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/su3AvatarImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:contentDescription="profile icon"
+        android:src="@drawable/ic_avatarpick"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/su3TitleView"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/su3AddAvatarBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="add profile icon"
+        android:src="@drawable/ic_chooseavatar"
+        app:layout_constraintBottom_toBottomOf="@+id/su3AvatarImg"
+        app:layout_constraintEnd_toEndOf="@+id/su3AvatarImg"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/su3AvatarDesc"
+        android:layout_width="342dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/add_avatar"
+        android:textColor="@color/gray"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/su3MainView"
+        app:layout_constraintStart_toStartOf="@+id/su3MainView"
+        app:layout_constraintTop_toBottomOf="@+id/su3AvatarImg" />
+
+    <View
+        android:id="@+id/su3LicenseView"
+        android:layout_width="342dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/su3MainView"
+        app:layout_constraintStart_toStartOf="@+id/su3MainView"
+        app:layout_constraintTop_toBottomOf="@+id/su3AvatarDesc" />
+
+    <TextView
+        android:id="@+id/su3LicenseText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/driver_license"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/su3LicenseView"
+        app:layout_constraintTop_toTopOf="@+id/su3LicenseView" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/su3LicenseField"
+        android:layout_width="342dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toBottomOf="@+id/su3LicenseView"
+        app:layout_constraintEnd_toEndOf="@+id/su3LicenseView"
+        app:layout_constraintStart_toStartOf="@+id/su3LicenseView"
+        app:layout_constraintTop_toBottomOf="@+id/su3LicenseText">
+
+        <EditText
+            android:id="@+id/su3LicenseFieldET"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_roundrect"
+            android:ems="15"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/_0000000000"
+            android:inputType="number"
+            android:paddingVertical="0dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_gray"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+        android:id="@+id/su3DateView"
+        android:layout_width="342dp"
+        android:layout_height="68dp"
+        app:layout_constraintEnd_toEndOf="@+id/su3MainView"
+        app:layout_constraintStart_toStartOf="@+id/su3MainView"
+        app:layout_constraintTop_toBottomOf="@+id/su3DateHint" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/license_reg_date"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/su3DateView"
+        app:layout_constraintTop_toTopOf="@+id/su3DateView" />
+
+
+    <ImageButton
+        android:id="@+id/su3DateImgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/su3DateText"
+        app:layout_constraintStart_toStartOf="@+id/su3DateText"
+        app:layout_constraintTop_toTopOf="@id/su3DateText"
+        app:srcCompat="@drawable/calendar_days" />
+
+    <TextView
+        android:id="@+id/su3DateText"
+        android:layout_width="342dp"
+        android:layout_height="44dp"
+        android:background="@drawable/ic_roundrect"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_vertical"
+        android:hint="@string/dd_mm_yyyy"
+        android:paddingStart="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/light_gray"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/su3DateView"
+        app:layout_constraintEnd_toEndOf="@+id/su3DateView"
+        app:layout_constraintStart_toStartOf="@+id/su3DateView" />
+
+
+    <TextView
+        android:id="@+id/su3DateHint"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Hint"
+        android:textColor="@color/light_gray"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/su3LicenseField"
+        app:layout_constraintTop_toBottomOf="@+id/su3LicenseField" />
+
+    <View
+        android:id="@+id/su3UploadPassView"
+        android:layout_width="342dp"
+        android:layout_height="74dp"
+        app:layout_constraintBottom_toBottomOf="@+id/su3MainView"
+        app:layout_constraintEnd_toEndOf="@+id/su3MainView"
+        app:layout_constraintStart_toStartOf="@+id/su3MainView" />
+
+    <TextView
+        android:id="@+id/su3UploadPassText"
+        android:layout_width="342dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/pass_upload"
+        android:textColor="@color/gray"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/su3UploadPassView"
+        app:layout_constraintTop_toTopOf="@+id/su3UploadPassView" />
+
+    <ImageButton
+        android:id="@+id/su3UploadPassImgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:src="@drawable/ic_uploadphoto"
+        app:layout_constraintBottom_toBottomOf="@+id/su3MainView"
+        app:layout_constraintStart_toStartOf="@+id/su3UploadPassView"
+        app:layout_constraintTop_toBottomOf="@+id/su3UploadPassText" />
+
+    <TextView
+        android:id="@+id/su3UploadPassText2"
+        android:layout_width="240dp"
+        android:layout_height="24dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/upload_photo"
+        android:textColor="@color/gray"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/su3MainView"
+        app:layout_constraintStart_toEndOf="@+id/su3UploadPassImgBtn"
+        app:layout_constraintTop_toBottomOf="@+id/su3UploadPassText" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/su3NextBtn"
+        android:theme="@style/FormButton"
+        android:layout_width="342dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/main_purple"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/next"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/su3UploadLicenseView"
+        android:layout_width="342dp"
+        android:layout_height="74dp"
+        app:layout_constraintBottom_toTopOf="@+id/su3UploadPassView"
+        app:layout_constraintEnd_toEndOf="@+id/su3MainView"
+        app:layout_constraintStart_toStartOf="@+id/su3MainView" />
+
+    <TextView
+        android:id="@+id/su3UploadLicenseText"
+        android:layout_width="342dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/upload_license"
+        android:textColor="@color/gray"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/su3UploadLicenseView"
+        app:layout_constraintTop_toTopOf="@+id/su3UploadLicenseView" />
+
+    <ImageButton
+        android:id="@+id/su3UploadLicenseImgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:src="@drawable/ic_uploadphoto"
+        app:layout_constraintBottom_toTopOf="@+id/su3UploadPassText"
+        app:layout_constraintStart_toStartOf="@+id/su3UploadLicenseView"
+        app:layout_constraintTop_toBottomOf="@+id/su3UploadLicenseText" />
+
+    <TextView
+        android:id="@+id/su3UploadLicense2"
+        android:layout_width="240dp"
+        android:layout_height="24dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/upload_photo"
+        android:textColor="@color/gray"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/su3UploadPassView"
+        app:layout_constraintStart_toEndOf="@+id/su3UploadLicenseImgBtn"
+        app:layout_constraintTop_toBottomOf="@+id/su3UploadLicenseText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
