@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/su2TitleView"
+        android:layout_width="342dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/su2MainView"
+        app:layout_constraintStart_toStartOf="@+id/su2MainView"
+        app:layout_constraintTop_toTopOf="@+id/su2MainView" />
+
+    <ImageButton
+        android:id="@+id/su2BackBtn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@color/white"
+        android:contentDescription="Arrow before"
+        android:src="@drawable/ic_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/su2TitleView"
+        app:layout_constraintStart_toStartOf="@+id/su2TitleView"
+        app:layout_constraintTop_toTopOf="@+id/su2TitleView"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="176dp"
+        android:layout_height="26dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_horizontal"
+        android:text="@string/create_account"
+        android:textColor="@color/light_black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/su2TitleView"
+        app:layout_constraintStart_toStartOf="@+id/su2TitleView"
+        app:layout_constraintTop_toTopOf="@+id/su2TitleView" />
+
+    <View
+        android:id="@+id/su2MainView"
+        android:layout_width="342dp"
+        android:layout_height="446dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/su2FieldsView"
+        android:layout_width="342dp"
+        android:layout_height="384dp"
+        app:layout_constraintBottom_toBottomOf="@+id/su2MainView"
+        app:layout_constraintEnd_toEndOf="@+id/su2MainView" />
+
+    <View
+        android:id="@+id/su2LastnameView"
+        android:layout_width="342dp"
+        android:layout_height="68dp"
+        app:layout_constraintEnd_toEndOf="@+id/su2FieldsView"
+        app:layout_constraintStart_toStartOf="@+id/su2FieldsView"
+        app:layout_constraintTop_toTopOf="@+id/su2FieldsView" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/last_name"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/su2LastnameView"
+        app:layout_constraintTop_toTopOf="@+id/su2LastnameView" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/su2LastnameField"
+        android:layout_width="342dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toBottomOf="@+id/su2LastnameView"
+        app:layout_constraintEnd_toEndOf="@+id/su2LastnameView"
+        app:layout_constraintStart_toStartOf="@+id/su2LastnameView">
+
+        <EditText
+            android:id="@+id/su2LastnameFieldET"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_roundrect"
+            android:ems="15"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/type_lastname"
+            android:inputType="text"
+            android:paddingVertical="0dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_gray"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/su2LastnameHint"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text=""
+        android:textColor="@color/light_gray"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/su2LastnameField"
+        app:layout_constraintTop_toBottomOf="@+id/su2LastnameField" />
+
+    <View
+        android:id="@+id/su2NameView"
+        android:layout_width="342dp"
+        android:layout_height="68dp"
+        app:layout_constraintEnd_toEndOf="@+id/su2LastnameView"
+        app:layout_constraintStart_toStartOf="@+id/su2LastnameView"
+        app:layout_constraintTop_toBottomOf="@+id/su2LastnameHint" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/Имя"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/su2NameView"
+        app:layout_constraintTop_toTopOf="@+id/su2NameView" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/su2NameField"
+        android:layout_width="342dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toBottomOf="@+id/su2NameView"
+        app:layout_constraintEnd_toEndOf="@+id/su2NameView"
+        app:layout_constraintStart_toStartOf="@+id/su2NameView">
+
+        <EditText
+            android:id="@+id/su2NameFieldET"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_roundrect"
+            android:ems="15"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/type_name"
+            android:inputType="text"
+            android:paddingVertical="0dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_gray"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/su2NameHint"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text=""
+        android:textColor="@color/light_gray"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/su2NameField"
+        app:layout_constraintTop_toBottomOf="@+id/su2NameField" />
+
+    <View
+        android:id="@+id/su2SurnameView"
+        android:layout_width="342dp"
+        android:layout_height="68dp"
+        app:layout_constraintEnd_toEndOf="@+id/su2NameView"
+        app:layout_constraintStart_toStartOf="@+id/su2NameView"
+        app:layout_constraintTop_toBottomOf="@+id/su2NameHint" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/surname"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/su2SurnameView"
+        app:layout_constraintTop_toTopOf="@+id/su2SurnameView" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/su2SurnameField"
+        android:layout_width="342dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toBottomOf="@+id/su2SurnameView"
+        app:layout_constraintEnd_toEndOf="@+id/su2SurnameView"
+        app:layout_constraintStart_toStartOf="@+id/su2SurnameView">
+
+        <EditText
+            android:id="@+id/su2SurnameFieldET"
+            android:layout_width="342dp"
+            android:layout_height="44dp"
+            android:background="@drawable/ic_roundrect"
+            android:ems="15"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/type_surname"
+            android:inputType="text"
+            android:paddingVertical="0dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_gray"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/su2SurnameHint"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text=""
+        android:textColor="@color/light_gray"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/su2SurnameField"
+        app:layout_constraintTop_toBottomOf="@+id/su2SurnameField" />
+
+    <View
+        android:id="@+id/su2BirthView"
+        android:layout_width="342dp"
+        android:layout_height="68dp"
+        app:layout_constraintEnd_toEndOf="@+id/su2SurnameView"
+        app:layout_constraintStart_toStartOf="@+id/su2SurnameView"
+        app:layout_constraintTop_toBottomOf="@+id/su2SurnameHint" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/birthdate"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/su2BirthView"
+        app:layout_constraintTop_toTopOf="@+id/su2BirthView" />
+
+    <ImageButton
+        android:id="@+id/su2BirthImgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:contentDescription="ssss"
+        app:layout_constraintBottom_toBottomOf="@id/su2BirthText"
+        app:layout_constraintStart_toStartOf="@+id/su2BirthText"
+        app:layout_constraintTop_toTopOf="@id/su2BirthText"
+        app:srcCompat="@drawable/calendar_days" />
+
+    <TextView
+        android:id="@+id/su2BirthText"
+        android:layout_width="342dp"
+        android:layout_height="44dp"
+        android:background="@drawable/ic_roundrect"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_vertical"
+        android:hint="@string/dd_mm_yyyy"
+        android:paddingStart="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/light_gray"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/su2BirthView"
+        app:layout_constraintEnd_toEndOf="@+id/su2BirthView"
+        app:layout_constraintStart_toStartOf="@+id/su2BirthView" />
+
+
+    <View
+        android:id="@+id/su2GenderView"
+        android:layout_width="342dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/su2BirthView"
+        app:layout_constraintStart_toStartOf="@+id/su2BirthView"
+        app:layout_constraintTop_toBottomOf="@+id/su2BirthView" />
+
+    <TextView
+        android:id="@+id/su2GenderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/gender"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/su2GenderView"
+        app:layout_constraintTop_toTopOf="@+id/su2GenderView" />
+
+    <RadioGroup
+        android:id="@+id/su2GenderRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/su2GenderView"
+        app:layout_constraintStart_toStartOf="@+id/su2GenderView"
+        app:layout_constraintTop_toBottomOf="@+id/su2GenderText">
+
+        <RadioButton
+            android:id="@+id/su2GenderMale"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="4dp"
+            android:buttonTint="@color/ultra_light_gray"
+            android:checked="true"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/man"
+            android:textColor="@color/light_gray"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/su2GenderView"
+            app:layout_constraintStart_toStartOf="@+id/su2GenderView"
+            app:layout_constraintTop_toBottomOf="@+id/su2GenderText" />
+
+        <RadioButton
+            android:id="@+id/su2GenderFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="4dp"
+            android:buttonTint="@color/ultra_light_gray"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/woman"
+            android:textColor="@color/ultra_light_gray"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/su2GenderView"
+            app:layout_constraintStart_toEndOf="@+id/su2GenderMale"
+            app:layout_constraintTop_toBottomOf="@+id/su2GenderText" />
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/su2NextBtn"
+        android:theme="@style/FormButton"
+        android:layout_width="342dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/main_purple"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/next"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

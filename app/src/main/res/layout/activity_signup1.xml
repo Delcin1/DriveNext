@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/su1TitleView"
+        android:layout_width="342dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/su1MainView"
+        app:layout_constraintStart_toStartOf="@+id/su1MainView"
+        app:layout_constraintTop_toTopOf="@+id/su1MainView" />
+
+    <ImageButton
+        android:id="@+id/su1PrevBtn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@color/white"
+        android:contentDescription="Arrow before"
+        android:src="@drawable/ic_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/su1TitleView"
+        app:layout_constraintStart_toStartOf="@+id/su1TitleView"
+        app:layout_constraintTop_toTopOf="@+id/su1TitleView"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/su1TitleText"
+        android:layout_width="176dp"
+        android:layout_height="26dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_horizontal"
+        android:text="@string/create_account"
+        android:textColor="@color/light_black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/su1TitleView"
+        app:layout_constraintStart_toStartOf="@+id/su1TitleView"
+        app:layout_constraintTop_toTopOf="@+id/su1TitleView" />
+
+    <View
+        android:id="@+id/su1MainView"
+        android:layout_width="342dp"
+        android:layout_height="415dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/su1FieldsView"
+        android:layout_width="342dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/su1MainView"
+        app:layout_constraintStart_toStartOf="@+id/su1MainView"
+        app:layout_constraintTop_toBottomOf="@+id/su1TitleView" />
+
+    <View
+        android:id="@+id/su1EmailView"
+        android:layout_width="342dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintEnd_toEndOf="@+id/su1MainView"
+        app:layout_constraintStart_toStartOf="@+id/su1MainView"
+        app:layout_constraintTop_toTopOf="@+id/su1FieldsView" />
+
+    <TextView
+        android:id="@+id/su1EmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/email"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        android:textStyle=""
+        app:layout_constraintStart_toStartOf="@+id/su1EmailView"
+        app:layout_constraintTop_toTopOf="@+id/su1EmailView" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/su1EmailField"
+        android:layout_width="342dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toBottomOf="@+id/su1EmailView"
+        app:layout_constraintEnd_toEndOf="@+id/su1EmailView"
+        app:layout_constraintStart_toStartOf="@+id/su1EmailView"
+        app:layout_constraintTop_toBottomOf="@+id/su1EmailText">
+
+        <EditText
+            android:id="@+id/su1EmailFieldET"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_roundrect"
+            android:ems="15"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/type_email"
+            android:inputType="textEmailAddress"
+            android:paddingVertical="0dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_gray"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/su1EmailView"
+            app:layout_constraintEnd_toEndOf="@+id/su1EmailView"
+            app:layout_constraintStart_toStartOf="@+id/su1EmailView"
+            app:layout_constraintTop_toBottomOf="@+id/su1EmailText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/su1EmailHint"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Hint"
+        android:textColor="@color/light_gray"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/su1EmailField"
+        app:layout_constraintTop_toBottomOf="@+id/su1EmailField" />
+
+    <View
+        android:id="@+id/su1PassView"
+        android:layout_width="342dp"
+        android:layout_height="68dp"
+        app:layout_constraintEnd_toEndOf="@+id/su1MainView"
+        app:layout_constraintStart_toStartOf="@+id/su1MainView"
+        app:layout_constraintTop_toBottomOf="@+id/su1EmailHint" />
+
+    <TextView
+        android:id="@+id/su1PassText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/create_password"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/su1PassView"
+        app:layout_constraintTop_toTopOf="@+id/su1PassView" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/su1PassField"
+        android:layout_width="342dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:theme="@style/Theme.Design.Light"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toBottomOf="@+id/su1PassView"
+        app:layout_constraintEnd_toEndOf="@+id/su1PassView"
+        app:layout_constraintStart_toStartOf="@+id/su1PassView"
+        app:layout_constraintTop_toBottomOf="@+id/su1PassText"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/su1PassFieldET"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_roundrect"
+            android:ems="15"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/type_password"
+            android:inputType="textPassword"
+            android:paddingVertical="0dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_gray"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/su1PassHint"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Hint"
+        android:textColor="@color/light_gray"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/su1PassField"
+        app:layout_constraintTop_toBottomOf="@+id/su1PassField" />
+
+    <View
+        android:id="@+id/su1RepeatPassView"
+        android:layout_width="342dp"
+        android:layout_height="68dp"
+        app:layout_constraintEnd_toEndOf="@+id/su1MainView"
+        app:layout_constraintStart_toStartOf="@+id/su1MainView"
+        app:layout_constraintTop_toBottomOf="@+id/su1PassHint" />
+
+    <TextView
+        android:id="@+id/su1RepeatPassText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/repeat_password"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/su1RepeatPassView"
+        app:layout_constraintTop_toTopOf="@+id/su1RepeatPassView" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/su1RepeatPassField"
+        android:layout_width="342dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:theme="@style/Theme.Design.Light"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toBottomOf="@+id/su1RepeatPassView"
+        app:layout_constraintEnd_toEndOf="@+id/su1RepeatPassView"
+        app:layout_constraintStart_toStartOf="@+id/su1RepeatPassView"
+        app:layout_constraintTop_toBottomOf="@+id/su1RepeatPassText"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/su1RepeatPassFieldET"
+            android:layout_width="342dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/ic_roundrect"
+            android:ems="15"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/type_password"
+            android:inputType="textPassword"
+            android:paddingVertical="0dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_gray"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/su1RepeatPassHint"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Hint"
+        android:textColor="@color/light_gray"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/su1RepeatPassField"
+        app:layout_constraintTop_toBottomOf="@+id/su1RepeatPassField" />
+
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/su1Checkbox"
+        android:layout_width="342dp"
+        android:layout_height="30dp"
+        android:buttonTint="@color/ultra_light_gray"
+        android:checked="false"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/policies_agreement"
+        android:textColor="@color/light_gray"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/su1FieldsView"
+        app:layout_constraintEnd_toEndOf="@+id/su1FieldsView"
+        app:layout_constraintStart_toStartOf="@+id/su1FieldsView"
+        app:layout_constraintTop_toBottomOf="@+id/su1RepeatPassHint" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/su1NextBtn"
+        android:theme="@style/FormButton"
+        android:layout_width="342dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/main_purple"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/next"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

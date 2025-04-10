@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/gsTitle"
+        android:layout_width="342dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="124dp"
+        android:layout_height="29dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/drivenext"
+        android:textColor="@color/main_purple"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/gsTitle"
+        app:layout_constraintTop_toTopOf="@+id/gsTitle" />
+
+    <TextView
+        android:id="@+id/gsTitleDesc"
+        android:layout_width="342dp"
+        android:layout_height="17dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/getting_started"
+        android:textColor="@color/default_text_color"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/gsTitle"
+        app:layout_constraintEnd_toEndOf="@+id/gsTitle"
+        app:layout_constraintStart_toStartOf="@+id/gsTitle" />
+
+    <ImageView
+        android:id="@+id/gsMainImg"
+        android:layout_width="343dp"
+        android:layout_height="343dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="59dp"
+        android:contentDescription="Main icon"
+        android:src="@drawable/splash_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gsTitle"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/gsSignInBtn"
+        android:theme="@style/FormButton"
+        android:layout_width="342dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/main_purple"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/sign_in"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/gsSignUpBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/gsSignUpBtn"
+        android:theme="@style/FormButton"
+        android:layout_width="342dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/sign_up"
+        android:textAllCaps="false"
+        android:textColor="@color/default_text_color"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#D0D5DD"
+        app:strokeWidth="1dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

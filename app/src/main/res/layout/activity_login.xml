@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/loginView"
+        android:layout_width="342dp"
+        android:layout_height="560dp"
+        android:layout_marginTop="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/loginTitle"
+        android:layout_width="342dp"
+        android:layout_height="64dp"
+        app:layout_constraintEnd_toEndOf="@+id/loginView"
+        app:layout_constraintStart_toStartOf="@+id/loginView"
+        app:layout_constraintTop_toTopOf="@+id/loginView" />
+
+    <TextView
+        android:id="@+id/loginTitleText"
+        android:layout_width="342dp"
+        android:layout_height="32dp"
+        android:gravity="center_horizontal"
+        android:text="@string/sign_in_title"
+        android:textColor="@color/gray"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/loginTitle"
+        app:layout_constraintStart_toStartOf="@+id/loginTitle"
+        app:layout_constraintTop_toTopOf="@+id/loginView" />
+
+    <TextView
+        android:id="@+id/loginTitleDesc"
+        android:layout_width="342dp"
+        android:layout_height="24dp"
+        android:gravity="center_horizontal"
+        android:text="@string/type_data"
+        android:textColor="@color/light_gray"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/loginTitle"
+        app:layout_constraintEnd_toEndOf="@+id/loginTitle"
+        app:layout_constraintStart_toStartOf="@+id/loginTitle" />
+
+    <View
+        android:id="@+id/loginMainFields"
+        android:layout_width="342dp"
+        android:layout_height="348dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="@+id/loginView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/loginView"
+        app:layout_constraintTop_toBottomOf="@+id/loginTitle" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginSignInBtn"
+        android:theme="@style/FormButton"
+        android:layout_width="342dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/main_purple"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/sign_in"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/loginGoogleBtn"
+        app:layout_constraintEnd_toEndOf="@+id/loginMainFields"
+        app:layout_constraintStart_toStartOf="@+id/loginMainFields" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginGoogleBtn"
+        android:theme="@style/FormButton"
+        android:layout_width="342dp"
+        android:layout_height="52dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/google"
+        android:textAllCaps="false"
+        android:textColor="@color/light_black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:cornerRadius="8dp"
+        app:icon="@drawable/ic_google"
+        app:iconGravity="textStart"
+        app:iconPadding="12dp"
+        app:iconTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/loginMainFields"
+        app:layout_constraintEnd_toEndOf="@+id/loginMainFields"
+        app:layout_constraintStart_toStartOf="@+id/loginMainFields"
+        app:strokeColor="#D0D5DD"
+        app:strokeWidth="1dp" />
+
+
+    <View
+        android:id="@+id/loginFields"
+        android:layout_width="342dp"
+        android:layout_height="210dp"
+        app:layout_constraintEnd_toEndOf="@+id/loginMainFields"
+        app:layout_constraintStart_toStartOf="@+id/loginMainFields"
+        app:layout_constraintTop_toTopOf="@+id/loginMainFields" />
+
+    <TextView
+        android:id="@+id/loginFieldsForgotText"
+        android:layout_width="164dp"
+        android:layout_height="25dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/montserrat"
+        android:padding="0dp"
+        android:text="@string/forgot_password"
+        android:textColor="@color/main_purple"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/loginFields"
+        app:layout_constraintEnd_toEndOf="@+id/loginFields"
+        app:layout_constraintStart_toStartOf="@+id/loginFields" />
+
+    <View
+        android:id="@+id/loginSignUpView"
+        android:layout_width="342dp"
+        android:layout_height="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/loginView"
+        app:layout_constraintEnd_toEndOf="@+id/loginView"
+        app:layout_constraintStart_toStartOf="@+id/loginView" />
+
+    <TextView
+        android:id="@+id/loginSignUpText"
+        android:layout_width="164dp"
+        android:layout_height="25dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_horizontal"
+        android:padding="0dp"
+        android:text="@string/sign_up"
+        android:textColor="@color/main_purple"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/loginSignUpView"
+        app:layout_constraintEnd_toEndOf="@+id/loginSignUpView"
+        app:layout_constraintStart_toStartOf="@+id/loginSignUpView" />
+
+
+    <View
+        android:id="@+id/loginMailView"
+        android:layout_width="342dp"
+        android:layout_height="68dp"
+        app:layout_constraintEnd_toEndOf="@+id/loginFields"
+        app:layout_constraintStart_toStartOf="@+id/loginFields"
+        app:layout_constraintTop_toTopOf="@+id/loginMainFields" />
+
+    <TextView
+        android:id="@+id/loginMailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/email"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/loginMailView"
+        app:layout_constraintTop_toTopOf="@+id/loginMailView" />
+
+
+    <EditText
+        android:id="@+id/loginMailField"
+        android:layout_width="342dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_roundrect"
+        android:ems="15"
+        android:fontFamily="@font/montserrat"
+        android:hint="@string/type_email"
+        android:inputType="textEmailAddress"
+        android:paddingVertical="0dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/light_gray"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/loginMailView"
+        app:layout_constraintEnd_toEndOf="@+id/loginMailView"
+        app:layout_constraintStart_toStartOf="@+id/loginMailView"
+        app:layout_constraintTop_toBottomOf="@+id/loginMailText" />
+
+    <TextView
+        android:id="@+id/loginMailHint"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/light_gray"
+        android:textFontWeight="600"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/loginMailField"
+        app:layout_constraintTop_toBottomOf="@+id/loginMailField" />
+
+    <View
+        android:id="@+id/loginPassView"
+        android:layout_width="342dp"
+        android:layout_height="68dp"
+        app:layout_constraintEnd_toEndOf="@+id/loginFields"
+        app:layout_constraintStart_toStartOf="@+id/loginFields"
+        app:layout_constraintTop_toBottomOf="@+id/loginMailHint" />
+
+    <TextView
+        android:id="@+id/loginPassText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/password"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/loginPassView"
+        app:layout_constraintTop_toTopOf="@+id/loginPassView" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/loginPassFieldLayout"
+        android:layout_width="342dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:theme="@style/Theme.Design.Light"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toBottomOf="@+id/loginPassView"
+        app:layout_constraintEnd_toEndOf="@+id/loginPassView"
+        app:layout_constraintStart_toStartOf="@+id/loginPassView"
+        app:layout_constraintTop_toBottomOf="@+id/loginPassText"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/loginPassField"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_roundrect"
+            android:ems="15"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/type_password"
+            android:inputType="textPassword"
+            android:paddingVertical="0dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_gray"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/loginPassHint"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/light_gray"
+        android:textFontWeight="600"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/loginPassFieldLayout"
+        app:layout_constraintTop_toBottomOf="@+id/loginPassFieldLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,12 +11,21 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-open class BaseActivity : AppCompatActivity() {
+open class CheckTokenActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        if (!NetworkUtils.isInternetAvailable(this)) {
-            val intent = Intent(this, NoInternetActivity::class.java)
+        val prefs = getSharedPreferences("app_prefs", MODE_PRIVATE)
+        val savedToken = prefs.getString("user_token", null)
+        if (savedToken == null) {
+            val intent = Intent(this@CheckTokenActivity, OnboardingActivity::class.java)
             startActivity(intent)
+            finish()
+            return
+        }
+        if (savedToken != "test_token") {
+            val intent = Intent(this@CheckTokenActivity, GettingStartedActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }
