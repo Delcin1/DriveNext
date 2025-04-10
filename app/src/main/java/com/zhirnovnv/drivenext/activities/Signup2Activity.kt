@@ -36,7 +36,7 @@ class Signup2Activity : AppCompatActivity() {
                 .build()
             datePicker.show(supportFragmentManager, "datePicker")
             datePicker.addOnPositiveButtonClickListener {
-                val simpleDateFormat = SimpleDateFormat("dd/mm/yyyy", Locale.getDefault())
+                val simpleDateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
                 binding.su2BirthText.text = simpleDateFormat.format(Date(it).time)
             }
         }
